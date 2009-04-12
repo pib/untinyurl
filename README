@@ -1,0 +1,7 @@
+This is a collection of functions in various languages to find where an shortened URL will redirect to.
+
+Each file has a function called untinyurl which takes a single string argument, the shortened URL to look for, and will return a string result of either the long version of that URL, or the same short URL that was passed in if there was a problem.
+
+The method used to get this information is doing an HTTP request (usually a HEAD request) and looking for the "Location:" header that is returned.
+
+The main purpose of this repo is to encourage people to use the functions provided to un-tiny the URLs in their Twitter, or other microblogging service, clients.
